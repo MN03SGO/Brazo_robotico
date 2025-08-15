@@ -1,7 +1,7 @@
-# Archivo: docker/Dockerfile
+
 FROM osrf/ros:humble-desktop-full
 
-# Instalar dependencias del sistema
+# sistema depedencias
 RUN apt-get update && apt-get install -y \
     python3-pip \
     python3-opencv \
@@ -14,21 +14,22 @@ RUN apt-get update && apt-get install -y \
     curl \
     && rm -rf /var/lib/apt/lists/*
 
-# Instalar dependencias Python específicas
+# dependencias py
 RUN pip3 install \
+    setuptools \
     mediapipe==0.10.7 \
     imutils \
     scipy
 
-# Configurar workspace ROS
+# ROS
 ENV ROS_WS=/home/ros2_ws
 RUN mkdir -p $ROS_WS/src
 
-# Configurar entorno ROS
+# entorno ROS
 RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 RUN echo "source $ROS_WS/install/setup.bash" >> ~/.bashrc || true
 
-# Configurar directorio de trabajo
+# Configurar directorio
 WORKDIR $ROS_WS
 
 # Comando por defecto
