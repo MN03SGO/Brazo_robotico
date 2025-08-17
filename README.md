@@ -1,5 +1,5 @@
 
-# Brazo robotico con RO
+# Brazo robotico con ROS
 
 El objetivo es desarrollar un sistema robótico capaz de percibir su entorno mediante una cámara web, identificar objetos de colores, y manipularlos de forma inteligente. El robot podrá realizar dos tareas principales:
 
