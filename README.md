@@ -7,7 +7,7 @@ Modo de Clasificación: Si se coloca un cubo de un color específico en una base
 
 Modo de Apilamiento por Gestos: Al detectar un gesto específico con la mano (por ejemplo, el número "2"), el robot seleccionará un cubo al azar de los que ya están clasificados y lo apilará sobre otro cubo en la base central.
 
-Este proyecto nace de la creatividad, las ganas de curiosear y de un video que me encontre (JAJAJA)
+Este proyecto nace de la creatividad, las ganas de curiosear y de iniciativas de las practicas(JAJAJA)
 
 ## Componentes usados (Posible a modificaciones)
 
